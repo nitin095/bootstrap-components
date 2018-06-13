@@ -1,0 +1,73 @@
+:root {
+  font-size: 14px;
+}
+h1,
+h2 {
+  color: darkmagenta;
+}
+.accordion {
+  margin: 2% 0%;
+}
+.accordion .header {
+  border: 0.5px solid lightgrey;
+  padding: 1rem;
+  background: whitesmoke;
+}
+.accordion-dark .header {
+  border: 0.5px solid rgb(124, 122, 122);
+  background: rgb(73, 73, 73);
+}
+.accordion .collapse {
+  border: 0.5px solid lightgrey;
+  padding: 1rem;
+  display: none;
+}
+.accordion-dark .collapse {
+  background: rgb(94, 92, 92);
+  color: white;
+}
+.accordion .header button {
+  border: 0;
+  background: none;
+  color: mediumblue;
+}
+.accordion-dark .header button {
+  color: white;
+}
+.accordion .header button:focus {
+  outline: none;
+  text-decoration: underline;
+}
+.accordion .header button:hover {
+  color: purple;
+  text-decoration: underline;
+}
+.accordion-dark .header button:hover {
+  color: lightgrey;
+}
+.code-container code {
+  background: rgb(251, 232, 252);
+  padding: 1rem;
+  overflow: auto;
+  width: 80vw;
+}
+.home-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 2rem;
+  color: darkmagenta;
+  border: 1px solid darkmagenta;
+  border-radius: 50%;
+  padding: 0.5rem;
+  transition: all 0.5s ease;
+}
+.home-button:hover {
+  color: white;
+  background: darkmagenta;
+  transform: scale(1.2);
+}
+.home-button a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,73 @@
+body {
+  margin: 0px;
+  font-family: raleway;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #2f234b,
+    #572b57,
+    #7f335b,
+    #a24056
+  );
+}
+.container-fluid .row {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.container-fluid .row span {
+  height: 25vh;
+  width: 15vw;
+  margin: 1rem;
+  font-size: 2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  letter-spacing: 1px;
+  word-break: keep-all;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.container-fluid .row span:hover {
+  color: darkmagenta;
+  background: rgba(255, 255, 255, 1);
+}
+.heading {
+  position: absolute;
+  top: 0;
+  margin-top: 5rem;
+  font-weight: lighter;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.5rem;
+  padding: 0rem 1rem;
+}
+a {
+  text-decoration: none;
+}
+small {
+  position: absolute;
+  bottom: 0;
+  margin: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  color: white;
+  letter-spacing: 2px;
+  background: rgba(0, 0, 0, 0.2);
+}
+/*Media queries*/
+@media screen and (max-width: 576px) {
+  .container-fluid .row span {
+    height: 10vh;
+    width: 60vw;
+  }
+  .row {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .container-fluid .row span {
+    width: 25vw;
+  }
+}

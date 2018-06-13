@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Modal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../css/flex.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="column">
+          <div class="column align-items-start">
+            <h1 class="active">Modal</h1>
+            <span>This is a default modal.</span>
+            <div class="row">
+              <button type="button" class="modal-toggler outline-btn" data-target="#modal">Launch modal</button>
+            </div>
+          </div>
+          <div class="column">
+            <h2>Modal with scrollable content</h2> This modal scrolls when it becomes too long for the user’s viewport.
+            <div class="row">
+              <button type="button" class="modal-toggler outline-btn" data-target="#modal-scrollable">Launch modal</button>
+            </div>
+          </div>
+          <div class="column">
+            <h2>Vertically centered modal</h2> Add .modal-centered to .modal to vertically center the modal.
+            <div class="row">
+              <button type="button" class="modal-toggler outline-btn" data-target="#modal-centered">Launch modal</button>
+            </div>
+          </div>
+          <div class="column">
+            <h2>Blurred background modal</h2> Add .modal-bck-blur to .modal to blur the background of modal.
+            <div class="row">
+              <button type="button" class="modal-toggler outline-btn" data-target="#modal-bck-blur">Launch modal</button>
+            </div>
+          </div>
+          <div class="column">
+            <h2>Dark modal</h2> Add .modal-dark to .modal to change the colors of modal to dark.
+            <div class="row">
+              <button type="button" class="modal-toggler outline-btn" data-target="#modal-dark">Launch modal</button>
+            </div>
+          </div>
+          <div class="column">
+            <h2>Small modal</h2> Add .modal-small to .modal to reduce the size of modal.
+            <div class="row">
+              <button type="button" class="modal-toggler outline-btn" data-target="#modal-small">Launch modal</button>
+            </div>
+          </div>
+          <div class="column">
+            <h2>Large modal</h2> Add .modal-large to .modal to increase the sizes of modal.
+            <div class="row">
+              <button type="button" class="modal-toggler outline-btn" data-target="#modal-large">Launch modal</button>
+            </div>
+          </div>
+        </div>
+        <!-- end column-1 -->
+        <div class="column">
+          <div class="column sticky-top">
+            <div class="code-container mt-1"> <small>Live code</small>
+              <code></code>
+            </div>
+          </div>
+        </div>
+        <!-- end column-2 -->
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container -->
+    
+    <div id="modals-container">
+      <div class="modal" id="modal">
+        <div class="modal-content column">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close"> 
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">This is modal body.</div>
+          <div class="modal-footer">
+            <button type="button" class="btn secondary-btn" data-dismiss="modal">Close</button>
+            <button type="button" class="btn primary-btn">Save changes</button>
+          </div>
+        </div>
+      </div>
+      <!-- end modal -->
+      <div class="modal" id="modal-scrollable">
+        <div class="modal-content column">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close"> 
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Cras mattis consectetur purus sit amet fermentum Cras justo odio, dapibus ac facilisis in, egestas eget quam Morbi leo risus, vestibulum at eros</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur Praesent commodo cursus magna, vel scelerisque nisl consectetur et Donec sed odio dui Donec ullamcorper nulla non metus auctor fringilla</p>
+            <p>Cras mattis consectetur purus sit amet fermentum Cras justo odio, dapibus ac facilisis in, egestas eget quam Morbi leo risus, porta ac consectetur ac, vestibulum at eros</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur Praesent commodo cursus magna, vel scelerisque nisl consectetur et Donec sed odio dui Donec ullamcorper nulla non metus auctor fringilla</p>
+            <p>Cras mattis consectetur purus sit amet fermentum Cras justo odio, dapibus ac facilisis in, egestas eget quam Morbi leo risus, porta ac consectetur ac, vestibulum at eros</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur Praesent commodo cursus magna, vel scelerisque nisl consectetur et Donec sed odio dui Donec ullamcorper nulla non metus auctor fringilla</p>
+            <p>Cras mattis consectetur purus sit amet fermentum Cras justo odio, dapibus ac facilisis in, egestas eget quam Morbi leo risus, porta ac consectetur ac, vestibulum at eros</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur Praesent commodo cursus magna, vel scelerisque nisl consectetur et Donec sed odio dui Donec ullamcorper nulla non metus auctor fringilla</p>
+            <p>Cras mattis consectetur purus sit amet fermentum Cras justo odio, dapibus ac facilisis in, egestas eget quam Morbi leo risus, porta ac consectetur ac, vestibulum at eros</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur Praesent commodo cursus magna, vel scelerisque nisl consectetur et Donec sed odio dui Donec ullamcorper nulla non metus auctor fringilla</p>
+            <p>Cras mattis consectetur purus sit amet fermentum Cras justo odio, dapibus ac facilisis in, egestas eget quam Morbi leo risus, porta ac consectetur ac, vestibulum at eros</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur Praesent commodo cursus magna, vel scelerisque nisl consectetur et Donec sed odio dui Donec ullamcorper nulla non metus auctor fringilla</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn secondary-btn" data-dismiss="modal">Close</button>
+            <button type="button" class="btn primary-btn">Save changes</button>
+          </div>
+        </div>
+      </div>
+      <!-- end modal -->
+      <div class="modal modal-centered" id="modal-centered">
+        <div class="modal-content column">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close"> 
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">This is modal body.</div>
+          <div class="modal-footer">
+            <button type="button" class="btn secondary-btn" data-dismiss="modal">Close</button>
+            <button type="button" class="btn primary-btn">Save changes</button>
+          </div>
+        </div>
+      </div>
+      <!-- end modal -->
+      <div class="modal modal-bck-blur" id="modal-bck-blur">
+        <div class="modal-content column">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close"> 
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">This is modal body.</div>
+          <div class="modal-footer">
+            <button type="button" class="btn secondary-btn" data-dismiss="modal">Close</button>
+            <button type="button" class="btn primary-btn">Save changes</button>
+          </div>
+        </div>
+      </div>
+      <!-- end modal -->
+      <div class="modal modal-dark" id="modal-dark">
+        <div class="modal-content column">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close"> 
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">This is modal body.</div>
+          <div class="modal-footer">
+            <button type="button" class="btn secondary-btn" data-dismiss="modal">Close</button>
+            <button type="button" class="btn primary-btn">Save changes</button>
+          </div>
+        </div>
+      </div>
+      <!-- end modal -->
+      <div class="modal modal-small" id="modal-small">
+        <div class="modal-content column">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close"> 
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">This is modal body.</div>
+          <div class="modal-footer">
+            <button type="button" class="btn secondary-btn" data-dismiss="modal">Close</button>
+            <button type="button" class="btn primary-btn">Save changes</button>
+          </div>
+        </div>
+      </div>
+      <!-- end modal -->
+      <div class="modal modal-large" id="modal-large">
+        <div class="modal-content column">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close"> 
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">This is modal body.</div>
+          <div class="modal-footer">
+            <button type="button" class="btn secondary-btn" data-dismiss="modal">Close</button>
+            <button type="button" class="btn primary-btn">Save changes</button>
+          </div>
+        </div>
+      </div>
+      <!-- end modal -->
+    </div>
+    <!-- end modals-container -->
+    <div class="home-button"> <a href="../index.html"><i class="fas fa-home"></i></a>
+    </div>
+  </div>
+  <!-- end container-fluid -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

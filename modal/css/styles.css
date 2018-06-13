@@ -1,0 +1,161 @@
+body {
+  margin: 0px;
+}
+button.outline-btn {
+  background: none;
+  border: 1px solid black;
+  color: black;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 0.4rem;
+  transition: all 0.3s ease;
+}
+button.outline-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+button.primary-btn {
+  background: rgb(0, 127, 255);
+  border: 1px solid rgb(0, 127, 265);
+  border-radius: 5px;
+  padding: 0.5rem 0.5rem;
+  color: white;
+}
+button.secondary-btn {
+  background: slategrey;
+  border: 1px solid darkgrey;
+  border-radius: 5px;
+  padding: 0.5rem 0.5rem;
+  color: white;
+}
+.modal {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  background: rgba(0, 0, 0, 0.4);
+  overflow-y: scroll;
+  z-index: 1;
+  filter: blur(0px) !important;
+}
+.modal-centered {
+  align-items: center;
+}
+.modal-small .modal-content {
+  width: 15vw !important;
+}
+.modal-large .modal-content {
+  width: 60vw !important;
+}
+.modal-dark .modal-content {
+  background: rgb(72, 73, 73) !important;
+  color: white !important;
+}
+.blur {
+  filter: blur(5px);
+}
+.modal.modal-centered .modal-content {
+  margin-top: 0rem;
+}
+.modal .modal-header {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal .modal-header button {
+  background: none;
+  color: inherit;
+  border: none;
+  font-size: 1.2rem;
+}
+.modal .modal-header h5 {
+  margin: 0px;
+}
+.modal .modal-body {
+  padding: 2rem 0rem;
+}
+.modal .modal-footer {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+.modal .modal-footer button:first-child {
+  margin-right: 0.5rem;
+}
+.modal .modal-content {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 30vw;
+  margin-top: 2rem;
+  display: none;
+}
+.code-container {
+  background: rgb(251, 232, 252);
+  padding: 1rem;
+  overflow: auto;
+  max-width: 45vw;
+}
+.active {
+  color: darkmagenta;
+}
+h1,
+h2 {
+  cursor: pointer;
+}
+.column small {
+  color: darkmagenta;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-family: verdana;
+  background: white;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.2rem;
+  margin-top: 1rem;
+}
+.home-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 2rem;
+  color: darkmagenta;
+  border: 1px solid darkmagenta;
+  border-radius: 50%;
+  padding: 0.5rem;
+  z-index: 0;
+  transition: all 0.5s ease;
+}
+.home-button:hover {
+  color: white;
+  background: darkmagenta;
+  transform: scale(1.2);
+}
+.home-button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 576px) {
+  .modal .modal-content {
+    width: 60vw;
+  }
+  .modal-small .modal-content {
+    width: 30vw !important;
+  }
+  .modal-large .modal-content {
+    width: 80vw !important;
+  }
+  h1 {
+    margin-top: 4rem;
+  }
+  .code-container {
+    max-width: 85vw;
+  }
+}
