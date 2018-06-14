@@ -153,8 +153,11 @@ h2 {
   .modal-large .modal-content {
     width: 80% !important;
   }
-  .modal .modal-footer {
+  .modal-small .modal-footer {
     justify-content: center;
+    flex-wrap: wrap;
+  }
+  .modal .modal-footer{
     flex-wrap: wrap;
   }
   h1 {
@@ -165,6 +168,15 @@ h2 {
   }
 }
 @media screen and (min-width: 576px) and (max-width: 1049px){
+  h1 {
+    margin-top: 3rem;
+  }
+  .modal-small .modal-content {
+    width: 20% !important;
+  }
+  .modal-small .modal-footer{
+    flex-wrap: wrap;
+  }
   .code-container {
     max-width: 85vw;
     width: 85vw;
