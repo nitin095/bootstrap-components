@@ -4,7 +4,7 @@ $(document).ready(() => {
   $(".accordion button").click(function() {
     let collapseId = $(this).attr("data-target");
     $(collapseId).slideToggle(300);
-    $('body').find('.accordion:has('+collapseId+') .collapse').not(collapseId).slideUp(300);
+    $('body').find(`.accordion:has(${collapseId}) .collapse`).not(collapseId).slideUp(300);
   });
 
   //animating home button

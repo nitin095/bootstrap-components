@@ -2,7 +2,7 @@ $(document).ready(() => {
   //to display dropdown menu of navbar
   $(".dropdown").click(function() {
     let dropdownId = $(this).attr("id");
-    $('.dropdown-menu[aria-labelledby="' + dropdownId + '"]').slideToggle(400);
+    $(`.dropdown-menu[aria-labelledby="${dropdownId}"]`).slideToggle(400);
   });
 
   //listening click anywhere on screen to close dropdown menu
