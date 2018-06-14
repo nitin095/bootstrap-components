@@ -152,7 +152,7 @@ h2 {
   outline: 1px solid;
   outline-offset: 0.1rem;
 }
-.code-container code {
+code {
   background: rgb(251, 232, 252);
   padding: 1rem;
   overflow: auto;
@@ -204,6 +204,7 @@ h2 {
     position: relative;
     box-shadow: none;
     background: #fff;
+    width: 80vw;
   }
   .nav-form {
     display: flex;

@@ -1,15 +1,13 @@
 $(document).ready(() => {
+
+  //showing clicked tab and hiding rest tabs of same accordion
   $(".accordion button").click(function() {
-    console.log("accordion button clicked");
     let collapseId = $(this).attr("data-target");
     $(collapseId).slideToggle(300);
-    $(collapseId)
-      .parent()
-      .children(".collapse")
-      .not(collapseId)
-      .slideUp(300);
+    $('body').find('.accordion:has('+collapseId+') .collapse').not(collapseId).slideUp(300);
   });
 
+  //displaying code by copying from accordion div 
   let codeContainer = $(".code-container code");
   let accCode = $(".accordion").prop("outerHTML");
   codeContainer.text(accCode);

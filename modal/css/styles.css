@@ -47,10 +47,10 @@ button.secondary-btn {
   align-items: center;
 }
 .modal-small .modal-content {
-  width: 15vw !important;
+  width: 15% !important;
 }
 .modal-large .modal-content {
-  width: 60vw !important;
+  width: 60% !important;
 }
 .modal-dark .modal-content {
   background: rgb(72, 73, 73) !important;
@@ -71,10 +71,11 @@ button.secondary-btn {
   background: none;
   color: inherit;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .modal .modal-header h5 {
   margin: 0px;
+  font-size: 1.2rem;
 }
 .modal .modal-body {
   padding: 2rem 0rem;
@@ -90,7 +91,7 @@ button.secondary-btn {
   background: #fff;
   padding: 1rem;
   border-radius: 5px;
-  width: 30vw;
+  width: 30%;
   margin-top: 2rem;
   display: none;
 }
@@ -144,18 +145,28 @@ h2 {
 
 @media screen and (max-width: 576px) {
   .modal .modal-content {
-    width: 60vw;
+    width: 60%;
   }
   .modal-small .modal-content {
-    width: 30vw !important;
+    width: 40% !important;
   }
   .modal-large .modal-content {
-    width: 80vw !important;
+    width: 80% !important;
+  }
+  .modal .modal-footer {
+    justify-content: center;
+    flex-wrap: wrap;
   }
   h1 {
     margin-top: 4rem;
   }
   .code-container {
     max-width: 85vw;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 1049px){
+  .code-container {
+    max-width: 85vw;
+    width: 85vw;
   }
 }
