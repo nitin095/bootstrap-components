@@ -56,6 +56,7 @@ $(document).ready(() => {
   $("h1,h2").click(function() {
     $(this).addClass("active");
     $("h1,h2").not(this).removeClass("active");
+    $(".code-name").html($(this).text());
     modalId = $(this).siblings().find("button").attr("data-target");
     modalCode = $(modalId).prop("outerHTML");
     codeContainer.text(modalCode);
