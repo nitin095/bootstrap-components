@@ -12,7 +12,7 @@ $(document).ready(() => {
   });
 
   //to close modal 
-  $('.modal button.close,.modal button[data-dismiss="modal"]').click(function() {
+  $('.modal button.close,.modal button[data-dismiss="modal"]').click(() => {
     if ($(modalId).hasClass("modal-bck-blur")) {
       $(".container").removeClass("blur");
     }
@@ -33,6 +33,12 @@ $(document).ready(() => {
       $(".modal").fadeOut(300);
     }
   });
+
+  //animating home button
+  $('.home-button').animate({
+  left: 30,
+  opacity: 1
+  }, 500 );
 
   //displaying code
   let codeContainer = $(".code-container code");

@@ -7,25 +7,29 @@ $(document).ready(() => {
     $('body').find('.accordion:has('+collapseId+') .collapse').not(collapseId).slideUp(300);
   });
 
+  //animating home button
+  $('.home-button').animate({
+  left: 30,
+  opacity: 1
+  }, 500 );
+
   //displaying code by copying from accordion div 
   let codeContainer = $(".code-container code");
   let accCode = $(".accordion").prop("outerHTML");
-  codeContainer.text(accCode);
-  codeContainer.html(
-    codeContainer
-      .html()
-      .replace(/\n/g, "<br/>")
-      .replace(/ /g, "&nbsp;")
-      .replace(/\n/g, "<br/>")
-  );
-
-  let CodeContainerAccDark = $(".acc-dark code");
   let accDarkCode = $(".accordion-dark").prop("outerHTML");
-  CodeContainerAccDark.text(accDarkCode);
-  CodeContainerAccDark.html(
-    CodeContainerAccDark.html()
+  codeContainer.eq(0).text(accCode);
+  codeContainer.eq(1).text(accDarkCode);
+  codeContainer.eq(0).html(
+    codeContainer.eq(0).html()
       .replace(/\n/g, "<br/>")
       .replace(/ /g, "&nbsp;")
       .replace(/\n/g, "<br/>")
   );
+  codeContainer.eq(1).html(
+    codeContainer.eq(1).html()
+      .replace(/\n/g, "<br/>")
+      .replace(/ /g, "&nbsp;")
+      .replace(/\n/g, "<br/>")
+  );
+  
 }); //end document ready function

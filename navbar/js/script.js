@@ -18,22 +18,27 @@ $(document).ready(() => {
     $(collapseId).slideToggle(300);
   });
 
+   //animating home button
+  $('.home-button').animate({
+  left: 30,
+  opacity: 1
+  }, 500 );
+
   //showing code of navbar
   let codeContainer = $(".code-container code");
   let navCode = $("nav").prop("outerHTML");
-  codeContainer.text(navCode);
-  codeContainer.html(
-    codeContainer
+  let navDarkCode = $('nav.nav-dark').prop("outerHTML");
+  codeContainer.eq(0).text(navCode);
+  codeContainer.eq(1).text(navDarkCode);
+  codeContainer.eq(0).html(
+    codeContainer.eq(0)
       .html()
       .replace(/\n/g, "<br/>")
       .replace(/ /g, "&nbsp;")
       .replace(/\n/g, "<br/>")
   );
-  let navDarkCodeContainer = $('.navDark-code-container code');
-  let navDarkCode = $('nav.nav-dark').prop("outerHTML");
-   navDarkCodeContainer.text(navDarkCode);
-  navDarkCodeContainer.html(
-    navDarkCodeContainer
+  codeContainer.eq(1).html(
+    codeContainer.eq(1)
       .html()
       .replace(/\n/g, "<br/>")
       .replace(/ /g, "&nbsp;")

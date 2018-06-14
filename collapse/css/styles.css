@@ -54,11 +54,13 @@ h2 {
 .home-button {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -40px;
   margin: 2rem;
+  margin-left: 0rem;
   color: darkmagenta;
   border: 1px solid darkmagenta;
   border-radius: 50%;
+  opacity: 0;
   padding: 0.5rem;
   transition: all 0.5s ease;
 }

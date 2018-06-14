@@ -43,6 +43,7 @@ body {
   color: rgba(255, 255, 255, 1);
   font-size: 1.5rem;
   padding: 0rem 1rem;
+  display: none;
 }
 a {
   text-decoration: none;
@@ -56,6 +57,7 @@ small {
   letter-spacing: 2px;
   background: rgba(0, 0, 0, 0.2);
 }
+
 /*Media queries*/
 @media screen and (max-width: 576px) {
   .container-fluid .row span {
